@@ -1,0 +1,39 @@
+* {box-sizing: border-box}
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+  background-color:rgba(246, 226, 207, 0.71)
+  
+  
+}
+
+
+.tablink {
+  background-color: rgba(246, 226, 207, 0.71);
+  color: rgb(23, 22, 22);
+  float: right;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 11px;
+  font-size: 18px;
+  width: 10%;
+}
+
+.tablink:hover {
+  background-color: rgba(246, 226, 207, 0.71)
+}
+
+
+.tabcontent {
+  color: rgb(6, 6, 6);
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+
+

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <meta name="description" content="Creating a portfolio">
+    <meta name="keywords" content="Create.">
+    <meta name="author" content="yllka.temaj">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+<style>
+  
+   
+    h1,h2{
+      text-align: center;
+    }
+    h3{
+      text-align: left;
+    }
+   
+  
+  
+
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+<button class="tablink" onclick="openPage('Skills', this, 'blue')">Skills</button>
+<button class="tablink" onclick="openPage('About me', this, 'blue')">About me</button>
+<button class="tablink" onclick="openPage('Home', this, 'blue')"id="defaultOpen">Home</button>
+
+<div id="Home" class="tabcontent">
+  <h1 class="large-font" style="color:rgb(60, 86, 179);"><b>Welcome</b></h1>
+  <h2><span style="font-size:36px">This is my portfolio.</span> I'am Yllka and i am a front-end developer check out for more.</h2>
+  <div style="text-align: right;"><img src="foto.png" width="" alt="My Image" /></div>
+  <svg height="150" width="300">
+    <defs>
+      <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%"
+        style="stop-color:rgb(51, 20, 227);stop-opacity:1" />
+        <stop offset="100%"
+        style="stop-color:rgb(51, 20, 227);stop-opacity:1" />
+      </linearGradient>
+    </defs>
+    <ellipse cx="125" cy="76" rx="95" ry="65" fill="url(#grad1)" />
+    <text fill="#ffffff" font-size="15" font-family="Verdana"
+    x="50" y="86">Front-end Developer</text>
+  </svg>
+
+    
+
+</div>
+
+<div id="About me" class="tabcontent">
+  <h2>About me</h2>
+  <hr>
+  <p4>Student at Riinvest college in the third year studying computer science looking for employment and internship opportunities.
+    I am open to learning and working with others. I followed a web-development training where it helped me a lot in the future, while now I hope to be part of the internship from starlabs.
+  I am a hardworking student, learning code for me is fun ,its been hard for the past two years due to covid changes but i am trying
+to get back on track looking for any chance to keep myself busy developing and learning to get better.This looks a great experience to be an intern
+at starlabs.During ICT training i learned a lot of new things which i also had the chance to practise.
+Meanwhile i am sharing some of my experiences,looking forward to be part of the IT market. </p4><br>
+    <br>
+    <div style="text-align: right;"><img src="og.jpg" width="400px" alt="ict" /></div>
+    <div style="text-align: right;"><img src="download.png" width="400px" alt="dsk" /></div>
+  
+ 
+
+  
+</div>
+
+<div id="Skills" class="tabcontent">
+  <h2>These are from my resume:</h2>
+  <h3 style="background-color:DodgerBlue;">Skills and Projects</h3>
+<ul>
+  <li>Java Script</li>
+  <li>Figma</li>
+  <li>C#</li>
+  <li>CSS</li>
+  <li>Cisco Networking</li>
+  <li>Bootstrap</li>
+  <li>HTML</li>
+  <li>SQL</li>
+</ul>  
+<h3 style="background-color:DodgerBlue;">Technical skills</h3>
+<ul>
+  <li>Problem Solving</li>
+  <li>Team Leader</li>
+  <li>Team Working</li>
+  <li>Creativity</li>
+</ul>
+<h3 style="background-color:DodgerBlue;">Languages</h3>
+<ul>
+  <li>English</li>
+  <li>Turkish</li>
+</ul>
+<hr style="height:3px;border-width:0;color:gray;background-color:rgb(238, 108, 27)">
+<h2>I want to develope these skills more:</h2>
+<svg width="300" height="300">
+  <circle cx="100" cy="80" r="70"
+  " stroke-width="5" fill="green" />
+     <text fill="#ffffff" font-size="17" font-family="Verdana"
+    x="50" y="86">REACT</text>
+
+</svg>
+<svg width="300" height="300">
+  <circle cx="100" cy="80" r="70"
+  " stroke-width="4" fill="orange" />
+     <text fill="#ffffff" font-size="17" font-family="Verdana"
+    x="50" y="86">JAVA SCRIPT</text>
+
+</svg>
+<svg width="300" height="300">
+  <circle cx="100" cy="80" r="70"
+  " stroke-width="4" fill="purple" />
+     <text fill="#ffffff" font-size="17" font-family="Verdana"
+    x="50" y="86">C#</text>
+
+</svg>
+<svg width="300" height="300">
+  <circle cx="100" cy="80" r="70"
+  " stroke-width="4" fill="red" />
+     <text fill="#ffffff" font-size="17" font-family="Verdana"
+    x="50" y="86">BACK-END</text>
+
+</svg>
+
+
+</div>
+<div id="Contact" class="tabcontent">
+  <p>more about me</p>
+  
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
+
