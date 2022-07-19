@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="shortcut icon" type="x-icon" href="foto.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,62 +20,90 @@
     h3{
       text-align: left;
     }
+    input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+  input[type=submit] {
+  background-color: #324bd8;
+  color: rgb(237, 227, 227);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+  background-color: #45a049;
+  }
+
+  .container {
+  border-radius: 5px;
+  width: 50%;
+  background-color: #fef7f7;
+  padding: 20px;
+  margin-left: 25%;
+    }
+    button {
+    font-size: 1.1em;
+    background-color: #EBF5FF;
+    color: #050505;
+    border: 3px solid black;
+   
+   }
+    button:hover, button:focus, button:active {
+   
+    color: #EBF5FF;
+    background-color: #d4d8faf5;
+    cursor: pointer; 
+  }
    
   
-  
-
 </style>
 </head>
 <body>
+  
 
-<button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
-<button class="tablink" onclick="openPage('Skills', this, 'blue')">Skills</button>
-<button class="tablink" onclick="openPage('About me', this, 'blue')">About me</button>
-<button class="tablink" onclick="openPage('Home', this, 'blue')"id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('Contact', this, '')">Contact</button>
+<button class="tablink" onclick="openPage('Skills', this, '')">Skills</button>
+<button class="tablink" onclick="openPage('About me', this, '')">About me</button>
+<button class="tablink" onclick="openPage('Home', this, '')"id="defaultOpen">Home</button>
 
-<div id="Home" class="tabcontent">
-  <h1 class="large-font" style="color:rgb(60, 86, 179);"><b>Welcome</b></h1>
-  <h2><span style="font-size:36px">This is my portfolio.</span> I'am Yllka and i am a front-end developer check out for more.</h2>
-  <div style="text-align: right;"><img src="foto.png" width="" alt="My Image" /></div>
-  <svg height="150" width="300">
-    <defs>
-      <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-        <stop offset="0%"
-        style="stop-color:rgb(51, 20, 227);stop-opacity:1" />
-        <stop offset="100%"
-        style="stop-color:rgb(51, 20, 227);stop-opacity:1" />
-      </linearGradient>
-    </defs>
-    <ellipse cx="125" cy="76" rx="95" ry="65" fill="url(#grad1)" />
-    <text fill="#ffffff" font-size="15" font-family="Verdana"
-    x="50" y="86">Front-end Developer</text>
-  </svg>
-
-    
-
+  <div id="Home" class="tabcontent">
+  <h1><b>Welcome</b></h1>
+  <h2><span >This is my portfolio.</span> I'am Yllka and i am a front-end developer check out for more.</h2>
+  <h2>You can check out for more in skills and about me!</h2>
+  <div style ="position: absolute; left: 41%; top: 31%; z-index: 2;"><img src="foto.png" width="" alt="My Image" /></div>
+  <hr>
 </div>
 
 <div id="About me" class="tabcontent">
-  <h2>About me</h2>
   <hr>
+  <h2>About me</h2>
   <p4>Student at Riinvest college in the third year studying computer science looking for employment and internship opportunities.
-    I am open to learning and working with others. I followed a web-development training where it helped me a lot in the future, while now I hope to be part of the internship from starlabs.
-  I am a hardworking student, learning code for me is fun ,its been hard for the past two years due to covid changes but i am trying
-to get back on track looking for any chance to keep myself busy developing and learning to get better.This looks a great experience to be an intern
-at starlabs.During ICT training i learned a lot of new things which i also had the chance to practise.
-Meanwhile i am sharing some of my experiences,looking forward to be part of the IT market. </p4><br>
+    I am open to learning and working with others. I followed a web-development training where it helped me a lot in the future, while 
+    now I hope to be part of the internship from starlabs.<br>
+     I am a hardworking student, learning code for me is fun ,its been hard for the past two years due to covid changes but i am trying
+    to get back on track looking for any chance to keep myself busy developing and learning to get better.This looks a great experience to be an intern
+    at starlabs.During ICT training i learned a lot of new things which i also had the chance to practice.
+    Meanwhile i am sharing some of my experiences,looking forward to be part of the IT market. </p4><br>
     <br>
-    <div style="text-align: right;"><img src="og.jpg" width="400px" alt="ict" /></div>
-    <div style="text-align: right;"><img src="download.png" width="400px" alt="dsk" /></div>
-  
- 
-
-  
+    <div style="text-align: center;"><img src="og.jpg" width="400px" alt="ict" /></div>
+    <div style="text-align: center;"><img src="download.png" width="400px" alt="dsk" /></div>
+    <hr>
 </div>
 
-<div id="Skills" class="tabcontent">
+  <div id="Skills" class="tabcontent">
   <h2>These are from my resume:</h2>
-  <h3 style="background-color:DodgerBlue;">Skills and Projects</h3>
+  <hr>
+  <h3>Skills and Projects</h3>
 <ul>
   <li>Java Script</li>
   <li>Figma</li>
@@ -84,55 +113,94 @@ Meanwhile i am sharing some of my experiences,looking forward to be part of the 
   <li>Bootstrap</li>
   <li>HTML</li>
   <li>SQL</li>
-</ul>  
-<h3 style="background-color:DodgerBlue;">Technical skills</h3>
-<ul>
+</ul> 
+
+    <h3>Technical skills</h3>
+    <ul>
   <li>Problem Solving</li>
   <li>Team Leader</li>
   <li>Team Working</li>
   <li>Creativity</li>
-  <li>Fast Learner</li>
-</ul>
-<h3 style="background-color:DodgerBlue;">Languages</h3>
+
+  </ul>
+    <h3>Languages</h3>
 <ul>
   <li>English</li>
   <li>Turkish</li>
 </ul>
-<hr style="height:3px;border-width:0;color:gray;background-color:rgb(238, 108, 27)">
-<h2>I want to develope these skills more:</h2>
-<svg width="300" height="300">
-  <circle cx="100" cy="80" r="70"
-  " stroke-width="5" fill="green" />
-     <text fill="#ffffff" font-size="17" font-family="Verdana"
-    x="50" y="86">REACT</text>
+    <h2> I want to develope these skills more:</h2>
+    <svg width="300" height="300">
+    <circle cx="90" cy="80" r="60"
+    stroke-width="5" fill="green" />
+     <text fill="" font-size="17" font-family="Verdana"
+       x="50" y="86">REACT</text>
 
-</svg>
-<svg width="300" height="300">
-  <circle cx="100" cy="80" r="70"
-  " stroke-width="4" fill="orange" />
-     <text fill="#ffffff" font-size="17" font-family="Verdana"
-    x="50" y="86">JAVA SCRIPT</text>
+  </svg>
+  <svg width="300" height="300">
+  <circle cx="90" cy="80" r="60"
+   stroke-width="4" fill="orange" />
+     <text fill="" font-size="17" font-family="Verdana"
+      x="50" y="86">JS</text>
 
-</svg>
-<svg width="300" height="300">
-  <circle cx="100" cy="80" r="70"
-  " stroke-width="4" fill="purple" />
-     <text fill="#ffffff" font-size="17" font-family="Verdana"
+  </svg>
+  <svg width="300" height="300">
+  <circle cx="90" cy="80" r="60"
+    stroke-width="4" fill="purple" />
+     <text fill="" font-size="17" font-family="Verdana"
     x="50" y="86">C#</text>
 
-</svg>
-<svg width="300" height="300">
-  <circle cx="100" cy="80" r="70"
-  " stroke-width="4" fill="red" />
-     <text fill="#ffffff" font-size="17" font-family="Verdana"
+  </svg>
+  <svg width="300" height="300">
+  <circle cx="90" cy="80" r="60"
+   stroke-width="4" fill="red" />
+     <text fill="" font-size="17" font-family="Verdana"
     x="50" y="86">BACK-END</text>
 
-</svg>
+  </svg>
+  <svg width="200" height="300">
+  <circle cx="90" cy="80" r="60"
+   stroke-width="4" fill="pink" />
+     <text fill="" font-size="17" font-family="Verdana"
+    x="50" y="86">Python</text>
+
+  </svg>
 
 
-</div>
-<div id="Contact" class="tabcontent">
-  <p>more about me</p>
+  </div>
+  <div id="Contact" class="tabcontent">
+  <h2>Contact Form:</h2>
+
+  <div class="container">
+  
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="" placeholder="Your name.">
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="" placeholder="Your last name.">
+    <label for="email">Email</label>
+    <input type="text" id="lname" name="" placeholder="example@gmail.com.">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Prishtine</option>
+      <option value="canada">Prizren</option>
+      <option value="usa">Gjakove</option>
+      <option value="australia">Peje</option>
+      <option value="canada">Suhareke</option>
+      <option value="usa">Gjilan</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Anything else?" style="height:100px"></textarea>
+
+    <button onclick="myFunction()">Contact</button>
+
+    <script>
+    function myFunction() {
+      alert("Thank you!");
+    }
+    </script>>
+    </form>
+    </div>
   
 
 <script>
@@ -151,8 +219,8 @@ function openPage(pageName,elmnt,color) {
 }
 
 
-document.getElementById("defaultOpen").click();
-</script>
+  document.getElementById("defaultOpen").click();
+  </script>
    
 </body>
 </html> 
